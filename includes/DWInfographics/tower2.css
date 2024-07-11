@@ -1,0 +1,325 @@
+.skin13.DWInfographics_container
+{
+	width : 100%;
+	display : inline-block;
+	margin-bottom : 15px;
+}
+.skin13 .DWInfographics_widget
+{
+	width : 25%;
+	margin : 0 auto;
+	float : left;
+}
+.skin13 .progress_bar
+{
+	width : 20px;
+	margin : 0 auto;
+	clear : both;
+	height : 200px;
+}
+.skin13 .progressBar
+{
+	position : absolute;
+	height : 0%;
+	overflow : visible!important;
+	bottom : 0;
+	width : 100%;
+}
+.skin13 .goalProgress
+{
+	height : 100%;
+	position : relative;
+}
+.skin13 .progressBarText
+{
+	font-size : 14px;
+	font-family : Lato, sans-serif;
+	font-weight : 400;
+	text-align : right;
+	display : inline-block;
+	position : absolute;
+	top : 0;
+	left : 100%;
+	padding-left : 8px;
+	line-height : 1!important;
+}
+.skin13 .DWInfographics_widget_label
+{
+	font-size : 11px;
+	text-transform : uppercase;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : 400;
+	position : relative;
+	display : inline-block;
+	text-align : center;
+	width : 100%;
+	padding-top : 2px;
+	margin-bottom : 10px;
+}
+.skin13 .progressBarNumber
+{
+	display : inline-block;
+}
+.skin13 .odometer-ribbon-inner
+{
+	-webkit-transition-duration : 1500ms;
+	-moz-transition-duration : 1500ms;
+	-ms-transition-duration : 1500ms;
+	-o-transition-duration : 1500ms;
+	transition-duration : 1500ms;
+	-webkit-transition-timing-function : ease-in-out;
+	-moz-transition-timing-function : ease-in-out;
+	-ms-transition-timing-function : ease-in-out;
+	-o-transition-timing-function : ease-in-out;
+	transition-timing-function : ease-in-out;
+	-webkit-transition-property : none;
+	-moz-transition-property : none;
+	-ms-transition-property : none;
+	-o-transition-property : none;
+	transition-property : none;
+}
+.skin13 .odometer.odometer-auto-theme, .skin13 .odometer.odometer-theme-default
+{
+	display : inline-block;
+	vertical-align : middle;
+	min-width : 50px;
+	text-align : left;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit
+{
+	display : inline-block;
+	vertical-align : middle;
+	position : relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer
+{
+	display : inline-block;
+	vertical-align : middle;
+	visibility : hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner
+{
+	text-align : left;
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon
+{
+	display : block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner
+{
+	display : block;
+	-webkit-backface-visibility : hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value
+{
+	display : block;
+	-webkit-transform : translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value
+{
+	text-align : center;
+}
+.skin13 #tower2_widget1 .goalProgress
+{
+	background : #D4D4D4;
+}
+.skin13 #tower2_widget1 .progressBar
+{
+	background : #0090ff;
+}
+.skin13 #tower2_widget2 .goalProgress
+{
+	background : #D4D4D4;
+}
+.skin13 #tower2_widget2 .progressBar
+{
+	background : #74d22f;
+}
+.skin13 #tower2_widget3 .goalProgress
+{
+	background : #D4D4D4;
+}
+.skin13 #tower2_widget3 .progressBar
+{
+	background : #f3b52f;
+}
+.skin13 #tower2_widget4 .goalProgress
+{
+	background : #D4D4D4;
+}
+.skin13 #tower2_widget4 .progressBar
+{
+	background : #f14017;
+}
+.skin13 #tower2_widget1 .progressBarText
+{
+	color : #0090ff;
+}
+.skin13 #tower2_widget2 .progressBarText
+{
+	color : #74d22f;
+}
+.skin13 #tower2_widget3 .progressBarText
+{
+	color : #f3b52f;
+}
+.skin13 #tower2_widget4 .progressBarText
+{
+	color : #f14017;
+}
+.skin13 #tower2_widget1 .DWInfographics_widget_label
+{
+	color : #7A7A7A;
+}
+.skin13 #tower2_widget2 .DWInfographics_widget_label
+{
+	color : #7A7A7A;
+}
+.skin13 #tower2_widget3 .DWInfographics_widget_label
+{
+	color : #7A7A7A;
+}
+.skin13 #tower2_widget4 .DWInfographics_widget_label
+{
+	color : #7A7A7A;
+}
+.odometer.odometer-auto-theme.odometer-animating .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default.odometer-animating .odometer-digit .odometer-digit-inner
+{
+	overflow : hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value
+{
+	position : absolute;
+	right : 0;
+	left : 0;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner
+{
+	-webkit-transition-property : -webkit-transform;
+	-moz-transition-property : -moz-transform;
+	-ms-transition-property : -ms-transform;
+	-o-transition-property : -o-transform;
+	transition-property : transform;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner
+{
+	-webkit-transform : translateY(-100%);
+	-moz-transform : translateY(-100%);
+	-ms-transform : translateY(-100%);
+	-o-transform : translateY(-100%);
+	-o-transform : translateY(-100%);
+	-ms-transform : translateY(-100%);
+	-moz-transform : translateY(-100%);
+	-webkit-transform : translateY(-100%);
+	transform : translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner
+{
+	-webkit-transform : translateY(-100%);
+	-moz-transform : translateY(-100%);
+	-ms-transform : translateY(-100%);
+	-o-transform : translateY(-100%);
+	-o-transform : translateY(-100%);
+	-ms-transform : translateY(-100%);
+	-moz-transform : translateY(-100%);
+	-webkit-transform : translateY(-100%);
+	transform : translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner
+{
+	-webkit-transition-property : -webkit-transform;
+	-moz-transition-property : -moz-transform;
+	-ms-transition-property : -ms-transform;
+	-o-transition-property : -o-transform;
+	transition-property : transform 2s;
+	-webkit-transform : translateY(0);
+	-moz-transform : translateY(0);
+	-ms-transform : translateY(0);
+	-o-transform : translateY(0);
+	-o-transform : translateY(0);
+	-ms-transform : translateY(0);
+	-moz-transform : translateY(0);
+	-webkit-transform : translateY(0);
+	transform : translateY(0);
+}
+.odometer .odometer-formatting-mark
+{
+	display : inline-block;
+}
+
+/*end of skin css*/
+
+#tower2 .DWInfographics_widget
+{
+	width : 20%;
+}
+#tower2 #tower2_widget5 .goalProgress
+{
+	background : #ffffff;
+}
+#tower2 #tower2_widget5 .progressBar
+{
+	background : #009966;
+}
+#tower2 #tower2_widget5 .progressBarText
+{
+	color : #0090ff;
+}
+#tower2 #tower2_widget5 .DWInfographics_widget_label
+{
+	color : #7A7A7A;
+}
+#tower2 #tower2_widget1 .progressBar
+{
+	background : #CD1E3B;
+}
+#tower2 #tower2_widget2 .progressBar
+{
+	background : #cc6600;
+}
+#tower2 #tower2_widget3 .progressBar
+{
+	background : #333366;
+}
+#tower2 #tower2_widget4 .progressBar
+{
+	background : #0A29CA;
+}
+#tower2 #tower2_widget1 .goalProgress
+{
+	background : #ffffff;
+}
+#tower2 #tower2_widget2 .goalProgress
+{
+	background : #ffffff;
+}
+#tower2 #tower2_widget3 .goalProgress
+{
+	background : #ffffff;
+}
+#tower2 #tower2_widget4 .goalProgress
+{
+	background : #ffffff;
+}
+@media (max-width:900px)
+{
+	#tower2 .DWInfographics_widget
+	{
+		width : 50%;
+		margin-bottom : 15px;
+	}
+}
+@media (max-width:640px)
+{
+	#tower2 .DWInfographics_widget
+	{
+		width : 100%;
+		margin-bottom : 15px;
+	}
+}

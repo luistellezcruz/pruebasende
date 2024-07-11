@@ -1,0 +1,449 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
+	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
+		url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
+		url('../fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
+		url('../fonts/fontawesome/Wccb1a2e41c8b3.htm#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/app */
+
+
+/* Scroll */
+.slideshow-it figure::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  margin-left: 5px;
+}
+.slideshow-it figure::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.slideshow-it figure::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px solid #ffffff;
+  border-radius: 50px;
+}
+.slideshow-it figure::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.slideshow-it figure::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+.slideshow-it figure::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+.slideshow-it figure::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.slideshow-it figure::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+.slideshow-it figure::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* General style */
+div#grid-gallery{
+	background-color: #fff;
+	width: 100%;
+	display: inline-block;
+}
+.grid-gallery ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+}
+
+.grid-gallery figure {
+	margin: 0;
+}
+
+.grid-gallery figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+li.show figure img {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.grid-gallery figcaption h3 {
+	font-size: 18px;
+	margin: 0;
+	padding: 0 0 0.5em;
+	text-align: center;
+}
+
+.grid-gallery figcaption h3:after {
+    width: 40px;
+    border-top: 2px solid #CECECE;
+    content: '';
+    display: block;
+    margin: 15px auto;
+}
+
+.grid-gallery figcaption p {
+	margin: 0;
+}
+
+/* Grid style */
+.grid-wrap {
+	margin: 0 auto;
+	padding: 0 1em 1.875em;
+}
+
+.grid {
+	margin: 0 auto;
+}
+
+.grid li {
+	width: 20%;
+	float: left;
+	cursor: pointer;
+	position: initial !important;
+}
+
+.grid li.nuWid {
+	width: 12%;
+	float: left;
+	cursor: pointer;
+}
+.pfl-photo li {
+	width: 20%;
+	float: left;
+	cursor: pointer;
+	position: initial !important;
+}
+
+.grid figure {
+	padding: 15px;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.grid li:hover figure {
+	opacity: 0.7;
+}
+
+.grid li figcaption {
+	padding: 25px 0px;
+	opacity: 1;
+	transition: 0.6s;
+}
+/*.grid li:hover figcaption {
+	opacity: 1;
+	transition: 0.6s;
+}*/
+
+.pfl-photo figure {
+	position: relative;
+}
+.pfl-photo li figcaption {
+	padding: 25px;
+	opacity: 1;
+	transition: 0.6s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*.pfl-photo li:hover figcaption {
+	opacity: 1;
+	transition: 0.6s;
+}*/
+
+/* Slideshow style */
+.slideshow-it {
+	position: fixed;
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.slideshow-open .slideshow-it {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.slideshow-it ul {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translate3d(0,0,150px);
+	transform: translate3d(0,0,150px);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.slideshow-it ul.animatable li {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.slideshow-open .slideshow-it ul {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.slideshow-it li {
+	width: 800px;
+	height: 620px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 80px 0 0 -400px;
+	visibility: hidden;
+}
+
+.slideshow-it li.show {
+	visibility: visible;
+}
+
+.slideshow-it li:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.8);
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.slideshow-it li.current:after {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+	transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.slideshow-it figure {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 50px solid #fff;
+	overflow: auto;
+}
+
+.slideshow-it figcaption {
+	padding-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.slideshow-it figcaption h3 {
+	font-weight: 300;
+	font-size: 200%;
+}
+
+/* Navigation */
+.slideshow-it nav span {
+	position: fixed;
+	z-index: 1000;
+	color: #59656c;
+	text-align: center;
+	padding: 3%;
+	cursor: pointer;
+	font-size: 2.2em;
+}
+
+.slideshow-it nav span.nav-prev,
+.slideshow-it nav span.nav-next {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.slideshow-it nav span.nav-next {
+	right: 0;
+}
+
+.slideshow-it nav span.nav-close {
+	/*top: 30px;
+	right: 70px;*/
+	padding: 0.5em 1em;
+	color: #31373a;
+}
+
+.icon:before,
+.icon:after {
+	font-family: 'fontawesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+span.nav-prev:before {
+	content: "\e601";
+}
+
+span.nav-next:before  {
+	content: "\e600";
+}
+
+/*span.nav-close:before {
+	content: "\e602";
+}*/
+
+span.off {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.off::before, .off::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    height: 1px;
+    background: #888;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.off::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.left, .right {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 50px 50px;
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+span.left{
+	background-image: url('../img/left-arrow.png');
+    left: 0;
+    right: auto;
+    top: 50%;
+    opacity: 0.6;
+}
+span.right{
+	background-image: url('../img/right-arrow.png');
+    right: 0;
+    left: auto;
+    top: 50%;
+    opacity: 0.6;
+}
+
+/* Info on arrow key navigation */
+.info-keys {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 60px;
+	font-size: 8px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.info-keys:before,
+.info-keys:after {
+	position: absolute;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+}
+
+.info-keys:before {
+	left: 10px;
+	content: "\e603";
+}
+
+.info-keys:after {
+	right: 10px;
+	content: "\e604";
+}
+
+/* Example media queries (reduce number of columns and change slideshow layout) */
+
+@media screen and (max-width: 60em) {
+	/* responsive columns; see "Element sizing" on http://masonry.desandro.com/options.html */
+	.grid li {
+		width: 33.3%;
+	}
+
+	.slideshow-it li {
+		width: 100%;
+		/*height: 100%;*/
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+
+	.slideshow-it li figure img {
+		width: 30%;
+		margin: 0 auto;
+	}
+
+	.slideshow-it nav span,
+	.slideshow-it nav span.nav-close {
+		font-size: 1.8em;
+		padding: 0.3em;
+	}
+
+	.info-keys {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 35em) {
+	.grid li {
+		width: 50%;
+	}}
+
+@media screen and (max-width: 24em) {
+	.grid li {
+		width: 100%;
+	}
+}
